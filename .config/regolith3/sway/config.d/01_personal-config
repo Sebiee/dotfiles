@@ -1,0 +1,17 @@
+## Start instant_word_search
+bindsym $mod+KP_End [title="instant_word_search" app_id="gnome-terminal-server"] focus
+bindsym $mod+Shift+KP_End exec --no-startup-id /home/sebi/.config/regolith3/sway/scripts/01_personal-config.instant_word_search
+bindsym $mod+Print exec --no-startup-id grim -g "$(slurp)" - | wl-copy
+
+for_window {
+    [title="instant_word_search" app_id="gnome-terminal-server"] floating enable; opacity 0.8; resize set width 17 ppt height 7 ppt; move position 83 ppt 0 ppt; move container to workspace number 3;
+    [instance="chromium.*puppeteer.*"] move container to workspace number 3
+}
+
+# exec_always --no-startup-id /home/sebi/.local/bin/autotiling -w 3
+
+input "type:keyboard" {
+    xkb_layout us,ro
+    xkb_variant ,std
+    xkb_options grp:win_space_toggle
+}

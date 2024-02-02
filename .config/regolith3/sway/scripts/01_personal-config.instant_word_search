@@ -1,0 +1,3 @@
+#!/bin/bash
+swaymsg [title="instant_word_search" app_id="gnome-terminal-server"] focus ||
+gnome-terminal --working-directory /home/sebi/Workspace/Perla/instant_word_search --title="instant_word_search" -- /bin/bash --login -i -c "npm start"

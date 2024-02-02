@@ -1,0 +1,34 @@
+!regolith.look.path: /usr/share/regolith-look/default
+regolith.look.path: /usr/share/regolith-look/nord
+
+## Set super to Alt
+wm.mod: Mod1
+wm.alt: Mod4
+
+## Gap configuration
+wm.gaps.inner.size: 0
+wm.gaps.outer.size: 0
+
+## Bar
+## wm.bar.position: top
+wm.bar.background.color: #00402a
+wm.bar.separatorchar:
+wm.bar.workspace.active.background.color: #006b47
+wm.bar.workspace.focused.background.color: #006b47
+wm.bar.workspace.inactive.background.color: #005337
+
+## Manage the wallpaper externally
+gnome.wallpaper: 
+## regolith.wallpaper.file: 
+## regolith.wallpaper.color.primary: 
+
+wm.gaps.focus_follows_mouse: always
+
+wm.font: Noto Sans Light 11
+gtk.font_name: Noto Sans Light 11
+gtk.document_font_name: Noto Sans Light 11
+gtk.monospace_font_name: Noto Mono 12
+gnome.terminal.font: Noto Mono 12
+
+## Shutdown
+sway.prompt.shutdown: swaynag -t warning -m 'Do you really want to shutdown?' -B 'Shutdown' '$wm.program.shutdown'

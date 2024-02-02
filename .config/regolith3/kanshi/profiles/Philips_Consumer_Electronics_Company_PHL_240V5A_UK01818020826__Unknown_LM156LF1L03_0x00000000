@@ -1,0 +1,4 @@
+profile {
+	output "Unknown LM156LF1L03 0x00000000" mode 1920x1080@59.997Hz position 1920,0 transform normal scale 1
+	output "Philips Consumer Electronics Company PHL 240V5A UK01818020826" mode 1920x1080@60Hz position 0,0 transform normal scale 1
+}
